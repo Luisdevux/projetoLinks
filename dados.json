@@ -1,0 +1,86 @@
+{
+  "usuarios": [
+    {
+        "id": "1",
+        "url_foto": "/perfil-azul.png",
+        "nome": "Emília Andrade", 
+        "fundo": "/fundo-azul.jpg",
+        "cor-link": "rgba(109, 169, 243, 1)",
+        "cor-texto": "rgba(241, 241, 241, 1)",
+        "border_radius": "4px",
+        "links": [
+            {
+                "icone": "/blog.svg",
+                "texto": "Blog",
+                "url": "https://github.com/Luisdevux"
+            },
+            {
+                "icone": "/gitlab.svg",
+                "texto": "GitLab",
+                "url": "https://gitlab.fslab.dev/LuissDv"
+            },
+            {
+                "icone": "/github.svg",
+                "texto": "GitLab",
+                "url": "https://github.com/Luisdevux"
+            },
+            {
+                "icone": "/linkedin.svg",
+                "texto": "Linkedin",
+                "url": "https://github.com/Luisdevux"
+            },
+            {
+                "icone": "/instagram.svg",
+                "texto": "Instagram",
+                "url": "https://www.instagram.com/luissss_felipe"
+            },
+            {
+                "icone": "/email.svg",
+                "texto": "Enviar um e-mail",
+                "url": "mailto:luis.felipe@estudante.ifro.edu.br"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "url_foto": "/perfil-verde.png",
+        "nome": "Luis Felipe",
+        "fundo": "/fundo-verde.jpg",
+        "cor-link": "rgba(58, 183, 77, 1)",
+        "cor-texto": "rgba(241, 241, 241, 1)",
+        "border_radius": "0px",
+        "links": [
+            {
+                "icone": "/blog.svg",
+                "texto": "Blog",
+                "url": "https://github.com/Luisdevux"
+            },
+            {
+                "icone": "/gitlab.svg",
+                "texto": "GitLab",
+                "url": "https://gitlab.fslab.dev/LuissDv"
+            },
+            {
+                "icone": "/github.svg",
+                "texto": "GitLab",
+                "url": "https://github.com/Luisdevux"
+            },
+            {
+                "icone": "/linkedin.svg",
+                "texto": "Linkedin",
+                "url": "https://github.com/Luisdevux"
+            },
+            {
+                "icone": "/instgram.svg",
+                "texto": "Instagram",
+                "url": "https://www.instagram.com/luissss_felipe"
+            },
+            {
+                "icone": "/email.svg",
+                "texto": "Enviar um e-mail",
+                "url": "mailto:luis.felipe@estudante.ifro.edu.br"
+            }
+        ]
+    }
+    ]
+}
