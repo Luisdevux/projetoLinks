@@ -11,6 +11,7 @@ const perfil = await resultado.json();
 const linksHTML = perfil.links.map((link: any) => `
   <a href="${link.url}" target="_blank" style="
       background-color: ${perfil["cor-link"]};
+      hover: ${perfil["cor-link-hover"]};
       color: ${perfil["cor-texto"]};
       border-radius: ${perfil.border_radius};
     ">
@@ -21,12 +22,15 @@ const linksHTML = perfil.links.map((link: any) => `
 
 app.innerHTML = `
   <div class="container" style="background-image: url('${perfil.fundo}');">
-    <div class="profile">
+    <div class="container-profile">
       <img src="${perfil.url_foto}" alt="Foto de ${perfil.nome}" />
       <p style="color: ${perfil["cor-texto"]};">${perfil.nome}</p>
     </div>
-    <div class="links">
+    <div class="container-links">
       ${linksHTML}
+    </div>
+    <div class=container-qrcode>
+      <img src="${perfil.qr}" />
     </div>
   </div>
 `;
