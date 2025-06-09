@@ -46,16 +46,18 @@ body {
   gap: 8px;
 }
 
-
+.container-links a:hover {
+  cursor: pointer;
+  filter: brightness(1.05);
+  transform: scale(1.01);
+}
 
 .container-links a {
   display: flex;
   align-items: center;
-  gap: 10px;
-  justify-content: center;
+  gap: 16px;
   text-decoration: none;
   padding: 16px;
-  font-weight: bold;
   transition: background-color 0.3s;
 }
 

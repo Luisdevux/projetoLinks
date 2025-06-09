@@ -6,31 +6,48 @@ const id = params.get("id");
 const app = document.querySelector<HTMLDivElement>("#app")!;
 
 const resultado = await fetch(`http://localhost:3000/usuarios/${id}`);
-const perfil = await resultado.json();
+const usuario = await resultado.json();
 
-const linksHTML = perfil.links.map((link: any) => `
-  <a href="${link.url}" target="_blank" style="
-      background-color: ${perfil["cor-link"]};
-      hover: ${perfil["cor-link-hover"]};
-      color: ${perfil["cor-texto"]};
-      border-radius: ${perfil.border_radius};
-    ">
-    <img src="${link.icone}" alt="${link.texto}" style="width: 20px; height: 20px;" />
-    ${link.texto}
-  </a>
-`).join('');
+const container = document.createElement("div");
+container.className = "container";
+if (!usuario.fundo) {
+  container.style.backgroundImage = "none";
+  container.style.backgroundColor = "white";
+} else if (usuario.fundo.includes("gradient")) {
+  container.style.background = usuario.fundo;
+} else if (usuario.fundo.startsWith("/")) {
+  container.style.backgroundImage = `url(${usuario.fundo})`;
+  container.style.backgroundColor = "";
+} else {
+  container.style.backgroundColor = usuario.fundo;
+}
 
-app.innerHTML = `
-  <div class="container" style="background-image: url('${perfil.fundo}');">
-    <div class="container-profile">
-      <img src="${perfil.url_foto}" alt="Foto de ${perfil.nome}" />
-      <p style="color: ${perfil["cor-texto"]};">${perfil.nome}</p>
-    </div>
-    <div class="container-links">
-      ${linksHTML}
-    </div>
-    <div class=container-qrcode>
-      <img src="${perfil.qr}" />
-    </div>
+
+
+container.innerHTML = `
+  <div class="container-profile" style="color: ${usuario["cor-texto"]};">
+    <img src="${usuario.url_foto}" alt="Foto de ${usuario.nome}" />
+    <p>${usuario.nome}</p>
+  </div>
+  <div class="container-links">
+    ${usuario.links.map((link: any) => `
+      <a href="${link.url}" target="_blank"
+          style="
+            background-color: ${usuario["cor-link"]};
+            border-radius: ${usuario.border_radius};
+            color: ${usuario["cor-texto"]};
+          "
+          onmouseover="this.style.backgroundColor='${usuario["cor-link-hover"] || usuario["cor-link"]}'"
+          onmouseout="this.style.backgroundColor='${usuario["cor-link"]}'"
+      >
+        <img src="${link.icone}" alt="${link.texto}" width="20" />
+        ${link.texto}
+      </a>
+    `).join("")}
+  </div>
+  <div class="container-qrcode">
+    <img src="${usuario.qr}" alt="QR Code de ${usuario.nome}" />
   </div>
 `;
+
+app.appendChild(container);

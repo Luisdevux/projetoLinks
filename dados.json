@@ -46,9 +46,10 @@
     {
         "id": "2",
         "url_foto": "/perfil-verde.png",
-        "nome": "Luis Felipe",
+        "nome": "Tereza Oliveira",
         "fundo": "/fundo-verde.png",
         "cor-link": "rgba(58, 183, 77, 1)",
+        "cor-link-hover": "rgba(21, 145, 40, 1)",
         "cor-texto": "rgba(241, 241, 241, 1)",
         "border_radius": "0px",
         "links": [
@@ -89,9 +90,10 @@
         "id": "3",
         "url_foto": "/perfil-vermelho.png",
         "nome": "Marco Andrade",
-        "fundo": "",
+        "fundo": "rgba(235, 94, 103, 1)",
         "cor-link": "rgba(241, 241, 241, 1)",
-        "cor-texto": "rgba(1, 1, 1, 1)",
+        "cor-link-hover": "rgba(216, 86, 94, 1)",
+        "cor-texto": "rgba(241, 241, 241, 1)",
         "border_radius": "16px",
         "links": [
             {
@@ -126,6 +128,135 @@
             }
         ],
         "qr": "/qrcode-vermelho.svg"
+    },
+    {
+        "id": "4",
+        "url_foto": "/perfil-amarelo.png",
+        "nome": "José Silva",
+        "fundo": "rgba(255, 206, 86, 1)",
+        "cor-link": "rgba(255, 255, 255, 1)",
+        "cor-link-hover": "rgba(241, 185, 36, 1)",
+        "cor-texto": "rgba(1, 1, 1, 1)",
+        "border_radius": "32px",
+        "links": [
+            {
+                "icone": "/blog.svg",
+                "texto": "Blog",
+                "url": "https://github.com/Luisdevux"
+            },
+            {
+                "icone": "/gitlab.svg",
+                "texto": "GitLab",
+                "url": "https://gitlab.fslab.dev/LuissDv"
+            },
+            {
+                "icone": "/github.svg",
+                "texto": "GitLab",
+                "url": "https://github.com/Luisdevux"
+            },
+            {
+                "icone": "/linkedin.svg",
+                "texto": "Linkedin",
+                "url": "https://github.com/Luisdevux"
+            },
+            {
+                "icone": "/instagram.svg",
+                "texto": "Instagram",
+                "url": "https://www.instagram.com/luissss_felipe"
+            },
+            {
+                "icone": "/email.svg",
+                "texto": "Enviar um e-mail",
+                "url": "mailto:luis.felipe@estudante.ifro.edu.br"
+            }
+        ],
+        "qr": "/qrcode-amarelo.svg"
+    },
+    {
+      "id": "5",
+      "url_foto": "/perfil-preto.png",
+      "nome": "Eliana Silva",
+      "fundo": "linear-gradient(179.74deg, #535155 24.93%, #B7B2BB 99.77%)",
+      "cor-link": "rgba(51, 51, 51, 1)",
+      "cor-link-hover": "rgba(102, 102, 102, 1)",
+      "cor-texto": "rgba(255, 255, 255, 1)",
+      "border_radius": "4px",
+      "links": [
+        {
+            "icone": "/blog.svg",
+            "texto": "Blog",
+            "url": "https://github.com/Luisdevux"
+        },
+        {
+            "icone": "/gitlab.svg",
+            "texto": "GitLab",
+            "url": "https://gitlab.fslab.dev/LuissDv"
+        },
+        {
+            "icone": "/github.svg",
+            "texto": "GitLab",
+            "url": "https://github.com/Luisdevux"
+        },
+        {
+            "icone": "/linkedin.svg",
+            "texto": "Linkedin",
+            "url": "https://github.com/Luisdevux"
+        },
+        {
+            "icone": "/instagram.svg",
+            "texto": "Instagram",
+            "url": "https://www.instagram.com/luissss_felipe"
+        },
+        {
+            "icone": "/email.svg",
+            "texto": "Enviar um e-mail",
+            "url": "mailto:luis.felipe@estudante.ifro.edu.br"
+        }
+      ],
+      "qr": "/qrcode-preto.svg"
+    },
+    {
+      "id": "6",
+      "url_foto": "/perfil-azul-verde.png",
+      "nome": "Eliana Silva",
+      "fundo": "linear-gradient(180deg, #76A0B8 0%, #69E2C3 100%)",
+      "cor-link": "rgba(255, 255, 255, 0.85)",
+      "cor-link-hover": "rgba(34, 33, 36, 1)",
+      "cor-texto": "rgba(0, 0, 0, 1)",
+      "border_radius": "32px",
+      "links": [
+        {
+            "icone": "/blog.svg",
+            "texto": "Blog",
+            "url": "https://github.com/Luisdevux"
+        },
+        {
+            "icone": "/gitlab.svg",
+            "texto": "GitLab",
+            "url": "https://gitlab.fslab.dev/LuissDv"
+        },
+        {
+            "icone": "/github.svg",
+            "texto": "GitLab",
+            "url": "https://github.com/Luisdevux"
+        },
+        {
+            "icone": "/linkedin.svg",
+            "texto": "Linkedin",
+            "url": "https://github.com/Luisdevux"
+        },
+        {
+            "icone": "/instagram.svg",
+            "texto": "Instagram",
+            "url": "https://www.instagram.com/luissss_felipe"
+        },
+        {
+            "icone": "/email.svg",
+            "texto": "Enviar um e-mail",
+            "url": "mailto:luis.felipe@estudante.ifro.edu.br"
+        }
+      ],
+      "qr": "/qrcode-preto.svg"
     }
-]
+  ]
 }
