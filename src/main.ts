@@ -22,8 +22,6 @@ if (!usuario.fundo) {
   container.style.backgroundColor = usuario.fundo;
 }
 
-
-
 container.innerHTML = `
   <div class="container-profile" style="color: ${usuario["cor-texto"]};">
     <img src="${usuario.url_foto}" alt="Foto de ${usuario.nome}" />
@@ -38,9 +36,10 @@ container.innerHTML = `
             border-radius: ${usuario.border_radius};
             color: ${usuario["cor-texto"]};
           "
-          onmouseover="this.style.backgroundColor='${usuario["cor-link-hover"] || usuario["cor-link"]}'"
-          onmouseout="this.style.backgroundColor='${usuario["cor-link"]}'"
-      >
+          onmouseover="this.style.backgroundColor='${usuario["cor-link-hover"] || usuario["cor-link"]}';"
+          
+          onmouseout="this.style.backgroundColor='${usuario["cor-link"]}';"
+        >
         <img src="${link.icone}" alt="${link.texto}" width="20" />
         ${link.texto}
       </a>
