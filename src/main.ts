@@ -27,13 +27,14 @@ if (!usuario.fundo) {
 container.innerHTML = `
   <div class="container-profile" style="color: ${usuario["cor-texto"]};">
     <img src="${usuario.url_foto}" alt="Foto de ${usuario.nome}" />
-    <p>${usuario.nome}</p>
+    <p style="color:${usuario["cor-nome"]}">${usuario.nome}</p>
   </div>
   <div class="container-links">
     ${usuario.links.map((link: any) => `
       <a href="${link.url}" target="_blank"
           style="
             background-color: ${usuario["cor-link"]};
+            border: 1px solid ${usuario["link-borda"]};
             border-radius: ${usuario.border_radius};
             color: ${usuario["cor-texto"]};
           "

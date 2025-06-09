@@ -3,7 +3,8 @@
     {
         "id": "1",
         "url_foto": "/perfil-azul.png",
-        "nome": "Emília Andrade", 
+        "nome": "Emília Andrade",
+        "cor-nome": "rgba(0, 0, 0, 1)",
         "fundo": "/fundo-azul.png",
         "cor-link": "rgba(109, 169, 243, 1)",
         "cor-link-hover": "rgba(59, 129, 216, 1)",
@@ -47,6 +48,7 @@
         "id": "2",
         "url_foto": "/perfil-verde.png",
         "nome": "Tereza Oliveira",
+        "cor-nome": "rgba(0, 0, 0, 1)",
         "fundo": "/fundo-verde.png",
         "cor-link": "rgba(58, 183, 77, 1)",
         "cor-link-hover": "rgba(21, 145, 40, 1)",
@@ -90,10 +92,12 @@
         "id": "3",
         "url_foto": "/perfil-vermelho.png",
         "nome": "Marco Andrade",
+        "cor-nome": "rgba(241, 241, 241, 1)",
         "fundo": "rgba(235, 94, 103, 1)",
         "cor-link": "rgba(241, 241, 241, 1)",
         "cor-link-hover": "rgba(216, 86, 94, 1)",
-        "cor-texto": "rgba(241, 241, 241, 1)",
+        "link-borda": "rgba(241, 241, 241, 1)",
+        "cor-texto": "rgba(1, 1, 1, 1)",
         "border_radius": "16px",
         "links": [
             {
@@ -177,8 +181,8 @@
       "url_foto": "/perfil-preto.png",
       "nome": "Eliana Silva",
       "fundo": "linear-gradient(179.74deg, #535155 24.93%, #B7B2BB 99.77%)",
-      "cor-link": "rgba(51, 51, 51, 1)",
-      "cor-link-hover": "rgba(102, 102, 102, 1)",
+      "cor-link": "rgba(83, 81, 85, 1)",
+      "cor-link-hover": "rgba(34, 33, 36, 1)",
       "cor-texto": "rgba(255, 255, 255, 1)",
       "border_radius": "4px",
       "links": [
@@ -194,7 +198,7 @@
         },
         {
             "icone": "/github.svg",
-            "texto": "GitLab",
+            "texto": "GitHub",
             "url": "https://github.com/Luisdevux"
         },
         {
@@ -219,10 +223,12 @@
       "id": "6",
       "url_foto": "/perfil-azul-verde.png",
       "nome": "Eliana Silva",
+      "cor-nome": "rgba(0, 0, 0, 1)",
       "fundo": "linear-gradient(180deg, #76A0B8 0%, #69E2C3 100%)",
-      "cor-link": "rgba(255, 255, 255, 0.85)",
+      "cor-link": "transparent",
       "cor-link-hover": "rgba(34, 33, 36, 1)",
-      "cor-texto": "rgba(0, 0, 0, 1)",
+      "link-borda": "rgba(241, 241, 241, 1)",
+      "cor-texto": "rgba(241, 241, 241, 1)",
       "border_radius": "32px",
       "links": [
         {
@@ -237,7 +243,7 @@
         },
         {
             "icone": "/github.svg",
-            "texto": "GitLab",
+            "texto": "GitHub",
             "url": "https://github.com/Luisdevux"
         },
         {

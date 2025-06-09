@@ -36,7 +36,6 @@ body {
 
 .container-profile p {
   font-size: 24px;
-  font-weight: bold;
   margin-bottom: 36px;
 }
 
@@ -46,11 +45,6 @@ body {
   gap: 8px;
 }
 
-.container-links a:hover {
-  cursor: pointer;
-  filter: brightness(1.05);
-  transform: scale(1.01);
-}
 
 .container-links a {
   display: flex;
@@ -59,6 +53,12 @@ body {
   text-decoration: none;
   padding: 16px;
   transition: background-color 0.3s;
+}
+
+.container-links a:hover {
+  cursor: pointer;
+  filter: brightness(1.05);
+  transform: scale(1.01);
 }
 
 .container-qrcode {
